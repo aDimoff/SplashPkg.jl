@@ -1,6 +1,10 @@
 #example package
 module SplashPkg
 
+using Pkg
+Pkg.activate(".")
+Pkg.add("Distributions")
+
 using Distributions
 
 export pdf_normal
